@@ -139,7 +139,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="10dp">
 
-        <EditText
+        <TextView
             android:id="@+id/edtResurt"
             android:layout_width="320dp"
             android:layout_height="60dp"
