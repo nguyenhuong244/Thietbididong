@@ -28,38 +28,72 @@ public class MainActivity extends AppCompatActivity {
         float soA= Float.parseFloat(dk_soA.getText().toString());
         float soB= Float.parseFloat(dk_soB.getText().toString());
         float KetQua;
-        if(dk_soA.getText().toString().equals("")==false && dk_soB.getText().toString().equals("")==false){
+        if(!dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
             KetQua = soA+soB;
         }
-        else{
-            if(dk_soA.getText().toString().equals("")==false){
-                KetQua = 0+soA;
-            }
-            else{
-                KetQua = 0+soB;
-            }
+        else if(dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = 0+soB;
         }
-        if(dk_soA.getText().toString().equals("")==true && dk_soB.getText().toString().equals("")==true){
-            dk_KQ.setText("0.0");
+        else if(dk_soB.getText().toString().equals("") && !dk_soA.getText().toString().equals("")){
+            KetQua = soA+0;
+        }
+        else{
+            KetQua = 0;
         }
         dk_KQ.setText(String.valueOf(KetQua));
     }
     public void Xuly_Tru(View v){
         float soA= Float.parseFloat(dk_soA.getText().toString());
         float soB= Float.parseFloat(dk_soB.getText().toString());
-        float KetQua = soA-soB;
+        float KetQua;
+        if(!dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = soA-soB;
+        }
+        else if(dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = 0+soB;
+        }
+        else if(dk_soB.getText().toString().equals("") && !dk_soA.getText().toString().equals("")){
+            KetQua = soA+0;
+        }
+        else{
+            KetQua = 0;
+        }
         dk_KQ.setText(String.valueOf(KetQua));
     }
     public void Xuly_Nhan(View v){
         float soA= Float.parseFloat(dk_soA.getText().toString());
         float soB= Float.parseFloat(dk_soB.getText().toString());
-        float KetQua = soA*soB;
+        float KetQua;
+        if(!dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = soA*soB;
+        }
+        else if(dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = 0+soB;
+        }
+        else if(dk_soB.getText().toString().equals("") && !dk_soA.getText().toString().equals("")){
+            KetQua = soA+0;
+        }
+        else{
+            KetQua = 0;
+        }
         dk_KQ.setText(String.valueOf(KetQua));
     }
     public void Xuly_Chia(View v){
         float soA= Float.parseFloat(dk_soA.getText().toString());
         float soB= Float.parseFloat(dk_soB.getText().toString());
-        float KetQua = soA/soB;
+        float KetQua;
+        if(!dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = soA/soB;
+        }
+        else if(dk_soA.getText().toString().equals("") && !dk_soB.getText().toString().equals("")){
+            KetQua = 0+soB;
+        }
+        else if(dk_soB.getText().toString().equals("") && !dk_soA.getText().toString().equals("")){
+            KetQua = soA+0;
+        }
+        else{
+            KetQua = 0;
+        }
         dk_KQ.setText(String.valueOf(KetQua));
     }
 }

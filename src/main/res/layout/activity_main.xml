@@ -45,7 +45,8 @@
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
             android:textColor="#000000"
-            android:background="#FAF7F7" />
+            android:background="#FAF7F7"
+            android:imeOptions="actionSearch"/>
 
     </LinearLayout>
     <LinearLayout
