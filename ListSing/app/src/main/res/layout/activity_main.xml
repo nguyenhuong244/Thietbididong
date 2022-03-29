@@ -9,9 +9,10 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#175A8F"
-        android:id="@+id/tvlist"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="#26D5C4"
+        android:id="@+id/txt"/>
     <ListView
         android:id="@+id/lv"
         android:layout_width="match_parent"
