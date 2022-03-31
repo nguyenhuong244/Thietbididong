@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText dk_nang, dk_cao;
     TextView KQ1,KQ2;
     Button bmi;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
