@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
     }
     public void iLogin(View v){
         Intent dangnhap = new Intent(this, ActivityLogin.class);
-        startActivity(dangnhap);
+        startActivityForResult(dangnhap,8000);
     }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class ActivityLogin extends AppCompatActivity {
 
@@ -14,7 +15,14 @@ public class ActivityLogin extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
     public void iQuiz(View v){
-        Intent quaylai = new Intent(this, ActivityHome.class);
-        startActivity(quaylai);
+        EditText edusername = (EditText) findViewById(R.id.edtUserName);
+
+        String username = edusername.getText().toString();
+
+        Intent iKQ = new Intent();
+        iKQ.putExtra("UN",username);
+
+        setResult(RESULT_OK, iKQ);
+        finish();
     }
 }
