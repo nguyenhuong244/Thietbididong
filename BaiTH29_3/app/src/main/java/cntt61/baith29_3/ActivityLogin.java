@@ -6,15 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
     }
-    public void iLogin(View v){
-        Intent dangnhap = new Intent(this, ActivityLogin.class);
-        startActivity(dangnhap);
+    public void iQuiz(View v){
+        Intent quaylai = new Intent(this, ActivityHome.class);
+        startActivity(quaylai);
     }
 }
