@@ -6,24 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#4CAF50">
+    android:background="@color/white">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv1"
-        android:background="#FF9800"
-        android:text="MMT61-NTU QUIZ"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="20sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv2"
-        android:text="MÀN HÌNH CHÍNH"
+        android:text="MÀN HÌNH TRANG CHỦ"
         android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -33,12 +23,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đăng nhập"
+        android:text="SANG MÀN HÌNH KHÁC"
         android:id="@+id/btnLogin"
         android:onClick="iLogin"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:backgroundTint="#4E5FBA"
+        android:backgroundTint="#A6A7AC"
         android:textColor="@color/white"/>
 
 </LinearLayout>

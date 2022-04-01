@@ -20,6 +20,7 @@ public class ActivityLogin extends AppCompatActivity {
         String username = edusername.getText().toString();
 
         Intent iKQ = new Intent();
+
         iKQ.putExtra("UN",username);
 
         setResult(RESULT_OK, iKQ);

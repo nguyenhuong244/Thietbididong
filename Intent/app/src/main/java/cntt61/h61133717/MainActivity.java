@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void iLogin(View v){
-        Intent dangnhap = new Intent(this, ActivityLogin.class);
+        Intent dangnhap = new Intent(this, SubActivityOne.class);
         startActivity(dangnhap);
     }
 }

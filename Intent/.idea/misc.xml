@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/eclipse/Thietbididong/Intent/app/src/main/res/layout/activity_login.xml" value="0.1" />
-        <entry key="..\:/eclipse/Thietbididong/Intent/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/eclipse/Thietbididong/Intent/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/eclipse/Thietbididong/Intent/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/eclipse/Thietbididong/Intent/app/src/main/res/layout/activity_sub_one.xml" value="0.16983695652173914" />
       </map>
     </option>
   </component>

@@ -16,15 +16,13 @@ public class ActivityHome extends AppCompatActivity {
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
-        if(requestCode==8000)
-            if(resultCode==RESULT_OK){
-                String usernameNhanDuoc = data.getStringExtra("UN");
-                TextView tvUN = (TextView) findViewById(R.id.tvUserName);
-                tvUN.setText(usernameNhanDuoc);
-            }
+        if(resultCode==RESULT_OK){
+            String usernameNhanDuoc = data.getStringExtra("UN");
+            TextView tvUN = (TextView) findViewById(R.id.tvUserName);
+            tvUN.setText(usernameNhanDuoc);
+        }
         else
             Toast.makeText(this, "Trả về thất bại", Toast.LENGTH_SHORT).show();
-        else
             super.onActivityResult(requestCode,resultCode,data);
     }
 }
