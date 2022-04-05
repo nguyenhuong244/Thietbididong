@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Your tip will be $"+tt, Toast.LENGTH_SHORT).show();
                 }
                 else if(r_18.isChecked()){
-                    float tt= (float) (nhap*0.13);
+                    float tt= (float) (nhap*0.18);
                     textView.setText("Your tip will be $"+tt);
                     Toast.makeText(MainActivity.this, "Your tip will be $"+tt, Toast.LENGTH_SHORT).show();
                 }
