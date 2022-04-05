@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
         android:ems="15"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/edtN"/>
+        android:id="@+id/edtN"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"/>
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,20 +24,23 @@
             android:id="@+id/radio_13"
             android:text="13%"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
 
         <RadioButton
             android:id="@+id/radio_15"
             android:text="15%"
             android:checked="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
 
         <RadioButton
             android:id="@+id/radio_18"
             android:text="18%"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
     </RadioGroup>
     <Button
         android:layout_width="wrap_content"
