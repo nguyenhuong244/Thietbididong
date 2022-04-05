@@ -8,16 +8,6 @@
     tools:context=".ActivityLogin">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv1"
-        android:background="#FF9800"
-        android:text="MMT61-NTU QUIZ"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textSize="20sp"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tv2"
