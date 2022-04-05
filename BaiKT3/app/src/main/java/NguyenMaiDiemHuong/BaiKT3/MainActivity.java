@@ -3,8 +3,10 @@ package NguyenMaiDiemHuong.BaiKT3;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    EditText edtitem,edtVT;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
