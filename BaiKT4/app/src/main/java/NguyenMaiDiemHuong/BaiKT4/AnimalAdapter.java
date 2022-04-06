@@ -46,7 +46,12 @@ public class AnimalAdapter extends BaseAdapter {
         TextView tvmota = (TextView) view.findViewById(R.id.tvMoTa);
         ImageView imageView = (ImageView) view.findViewById(R.id.img);
 
-        
-        return null;
+        Animal animal = animalList.get(i);
+
+        tvten.setText(animal.getTen());
+        tvmota.setText(animal.getMoTa());
+        imageView.setImageResource(animal.getHinh());
+
+        return view;
     }
 }
