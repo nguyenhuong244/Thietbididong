@@ -7,11 +7,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/img"
             android:padding="10dp">
         </ImageView>
@@ -25,14 +27,14 @@
                 android:layout_height="wrap_content"
                 android:textColor="#4d4d4d"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="30sp"
                 android:text="Tên"/>
             <TextView
                 android:id="@+id/tvMoTa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mô tả"
-                android:textSize="15sp"
+                android:textSize="22sp"
                 android:textColor="#838181"/>
         </LinearLayout>
     </LinearLayout>
