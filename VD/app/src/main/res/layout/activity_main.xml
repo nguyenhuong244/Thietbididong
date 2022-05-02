@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:layout_marginStart="15dp"
+        android:completionThreshold="1"
         android:id="@+id/attv"/>
 
 </LinearLayout>
