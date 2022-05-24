@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DANH MỤC SÁCH"
+        android:text="DANH MỤC THƠ"
         android:textSize="20dp"
         android:gravity="center"/>
     <LinearLayout
@@ -44,10 +44,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="chưa chọn sách nào"
-        android:layout_marginStart="10dp"
+        android:layout_gravity="center_horizontal"
         />
     <ListView
-        android:id="@+id/lvSACH"
+        android:id="@+id/lvTho"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

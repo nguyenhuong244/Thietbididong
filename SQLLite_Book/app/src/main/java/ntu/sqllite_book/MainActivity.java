@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         databaseBook = SQLiteDatabase.openOrCreateDatabase("/data/data/ntu.sqllite_book/MyBook.db", null);
         // Ta che hàm sau lại, ở những lần chạy sau
         // vì ta không muốn tạo CDSL lại từ đầu
-        // TaoBangVaThemDuLieu();
+//        TaoBangVaThemDuLieu();
         // ThemMoiSach(10,"Mạng máy tính",50,10,"Sách về Mạng");
         //
         // CapNhat(2,"Lập trình A đây rồi", 100, 500,"Sách quí");

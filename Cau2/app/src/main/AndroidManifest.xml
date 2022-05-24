@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ntu.sqllite_book">
+    package="cntt61.h61133717">
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SQLLite_Book">
-        <activity
-            android:name=".ThemActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SuaActivity"
-            android:exported="false" />
+        android:theme="@style/Theme.Cau2">
         <activity
             android:name=".MainActivity"
             android:exported="true">

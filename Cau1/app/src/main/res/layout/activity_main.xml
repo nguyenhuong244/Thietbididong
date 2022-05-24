@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap a"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tva"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edta"
+        android:backgroundTint="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap b"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvb"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edtb"
+        android:backgroundTint="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap h"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvh"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edth"
+        android:backgroundTint="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btcv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CFC8C8"
+            android:text="Kết Quả"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:onClick="KetQua"
+            android:layout_marginEnd="10dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textColor="#5A5555"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvcv"
+            android:gravity="center"
+            android:text="Chu vi"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textColor="#5A5555"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvdt"
+            android:gravity="center"
+            android:text="Diện tích"/>
+    </LinearLayout>
+
+</LinearLayout>
