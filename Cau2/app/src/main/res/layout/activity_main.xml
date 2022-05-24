@@ -11,18 +11,19 @@
         android:text="DANH MỤC THƠ"
         android:textSize="20dp"
         android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtMaCHON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chưa chọn thơ"
+        android:layout_gravity="center_horizontal"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" android:orientation="horizontal"
         android:gravity="center"
         android:layout_margin="10dp">
-        <Button
-            android:id="@+id/btnThem"
-            android:text="Thêm"
-            android:layout_width="80dp"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:layout_height="wrap_content"/>
         <Button
             android:id="@+id/btnXoa"
             android:text=" XÓA "
@@ -30,22 +31,8 @@
             android:layout_marginEnd="5dp"
             android:gravity="center"
             android:layout_height="wrap_content"/>
-        <Button
-            android:id="@+id/btnSua"
-            android:text=" SỬA "
-            android:layout_width="80dp"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            android:layout_height="wrap_content"/>
 
     </LinearLayout>
-    <EditText
-        android:id="@+id/edtMaCHON"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="chưa chọn sách nào"
-        android:layout_gravity="center_horizontal"
-        />
     <ListView
         android:id="@+id/lvTho"
         android:layout_width="match_parent"
