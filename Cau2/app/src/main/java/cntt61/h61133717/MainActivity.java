@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,6 +24,16 @@ public class MainActivity extends AppCompatActivity {
         databaseTho = SQLiteDatabase.openOrCreateDatabase("/data/data/cntt61.h61133717/MyBook.db", null);
         TaoBangVaThemDuLieu();
         NapSACHvaoListview();
+        Button nutXoa = (Button) findViewById(R.id.btnXoa);
+        EditText edChon = (EditText) findViewById(R.id.edtMaCHON);
+        nutXoa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String maTho = edChon.getText().toString();
+                int ma = Integer.parseInt(maTho);
+                XoaTho(ma);
+            }
+        });
     }
     void TaoBangVaThemDuLieu() {
         String sqlXoaBang = "DROP TABLE IF EXISTS THO";
@@ -73,4 +85,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    void XoaTho(int ma) {
+        String[] thamSoTruyen = {String.valueOf(ma)};
+        int kq = databaseTho.delete("BOOKS", "BookID=?", thamSoTruyen);
+        if (kq == 0)
+            Toast.makeText(this, "Không xóa  được", Toast.LENGTH_LONG).show();
+        else {
+            Toast.makeText(this, "Xóa thành công", Toast.LENGTH_LONG).show();
+        }
+    }
+
 }
