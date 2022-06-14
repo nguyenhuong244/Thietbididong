@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     EditText a,b,h;
     TextView KQcv,KQdt;
-    Button cv,dt;
+    Button cv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +19,7 @@ public class MainActivity extends AppCompatActivity {
         a=(EditText) findViewById(R.id.edta);
         b=(EditText) findViewById(R.id.edtb);
         h=(EditText) findViewById(R.id.edth);
-        cv=(Button) findViewById(R.id.btcv);
-        dt=(Button) findViewById(R.id.btdt);
+        cv=(Button) findViewById(R.id.btkq);
         KQcv=(TextView) findViewById(R.id.tvcv);
         KQdt=(TextView) findViewById(R.id.tvdt);
     }

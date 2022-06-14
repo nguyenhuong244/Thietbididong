@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 edtitem.setText(arrayList.get(i));
-                edtVT.setText(String.valueOf(i));
+                edtVT.setText(String.valueOf(i+1));
                 vt = i;
             }
         });
