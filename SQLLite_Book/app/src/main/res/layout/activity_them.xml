@@ -30,7 +30,7 @@
             android:ems="10"
             android:backgroundTint="@color/black"
             android:textSize="20sp"
-            android:id="@+id/edtNhaSach"/>
+            android:id="@+id/edtMaSach"/>
 
     </LinearLayout>
     <LinearLayout
@@ -111,22 +111,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp">
         <Button
-            android:id="@+id/btnThem"
+            android:id="@+id/btnThemSach"
             android:text="Thêm Sách"
-            android:onClick="ThemMoiSach"
+            android:onClick="ThemSach"
             android:layout_width="wrap_content"
             android:layout_marginEnd="15dp"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:backgroundTint="#009688"
-            tools:ignore="OnClick" />
-        <Button
-            android:id="@+id/btnQuayLai"
-            android:text="Quay lại"
-            android:layout_width="wrap_content"
-            android:gravity="center"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#009688"/>
+            android:backgroundTint="#009688" />
     </LinearLayout>
 
 </LinearLayout>

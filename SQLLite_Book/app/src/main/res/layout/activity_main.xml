@@ -22,7 +22,6 @@
         <Button
             android:id="@+id/btnThem"
             android:text="Thêm"
-            android:onClick="themsach"
             android:layout_width="wrap_content"
             android:layout_marginEnd="10dp"
             android:gravity="center"

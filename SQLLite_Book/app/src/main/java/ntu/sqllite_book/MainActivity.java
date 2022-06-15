@@ -33,20 +33,17 @@ public class MainActivity extends AppCompatActivity {
         databaseBook = SQLiteDatabase.openOrCreateDatabase("/data/data/ntu.sqllite_book/MyBook.db", null);
         // Ta che hàm sau lại, ở những lần chạy sau
         // vì ta không muốn tạo CDSL lại từ đầu
-        //TaoBangVaThemDuLieu();
+//        TaoBangVaThemDuLieu();
 
         // ThemMoiSach(10,"Mạng máy tính",50,10,"Sách về Mạng");
         //
         // CapNhat(2,"Lập trình A đây rồi", 100, 500,"Sách quí");
-//        if(databaseBook!=null){
         NapSACHvaoListview();
-//        }
         Button nutThem = (Button) findViewById(R.id.btnThem);
         Button nutSua = (Button) findViewById(R.id.btnSua);
         Button nutXoa = (Button) findViewById(R.id.btnXoa);
         TextView edChon = (TextView) findViewById(R.id.edtMaCHON);
-//        TextView TenSach = (TextView) findViewById(R.id.tvTenSach);
-        // Xử lý
+
         nutXoa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,35 +52,41 @@ public class MainActivity extends AppCompatActivity {
                 XoaSach(ma);
             }
         });
-//        nutSua.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                // Lấy mã sách vừa chọn
-//                String maSach = edChon.getText().toString();
-//                // Tạo intent
-//                Intent intentSua = new Intent();
-//                // gói dữ liệu
-//                intentSua.putExtra("masach", maSach);
-//                // Khởi động SuaACtivity
-//                startActivity(intentSua);
-//            }
-//        });
+        nutSua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Lấy mã sách vừa chọn
+                String maSach = edChon.getText().toString();
+                // Tạo intent
+                Intent intentSua = new Intent(MainActivity.this,SuaActivity.class);
+                // gói dữ liệu
+                intentSua.putExtra("masach", maSach);
+                // Khởi động SuaACtivity
+                startActivity(intentSua);
+            }
+        });
         nutThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentThem = new Intent(MainActivity.this,ThemActivity.class);
-                startActivity(intentThem);
+                MainActivity.this.startActivity(intentThem);
+                Intent i=getIntent();
+                Bundle b=i.getBundleExtra("data");
+                int ma=b.getInt("MS");
+                String ten=b.getString("TS");
+                int sotrang=b.getInt("ST");
+                float gia=b.getFloat("GIA");
+                String mota=b.getString("MT");
+                ThemMoiSach(ma,ten,sotrang,gia,mota);
+                NapSACHvaoListview();
             }
         });
 
 
     }
-//    public void themsach(View v){
-//        Intent nhapsach = new Intent(this, ThemActivity.class);
-//        startActivity(nhapsach);
-//    }
 
-    public void ThemMoiSach(int ma, String ten, int sotrang, float gia, String mota) {
+    void ThemMoiSach(int ma, String ten, int sotrang, float gia, String mota) {
+
         String sqlThem= "INSERT INTO BOOKS VALUES( " +  ma  + "," +
                                                     "'" + ten + "'," +
                                                     sotrang + "," +
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //    }
 
-    void NapSACHvaoListview() {
+    public void NapSACHvaoListview() {
         //1. Lấy tham chiếu đến Listview trong Layout
         ListView listView = (ListView) findViewById(R.id.lvSACH);
         //2. Nguồn dữ liệu
@@ -221,3 +224,10 @@ public class MainActivity extends AppCompatActivity {
         databaseBook.execSQL(sqlThem5);
     }
 }
+//class Debug {
+//    public static boolean on = true;
+//
+//    public static void print( String s ) {
+//        if (on) System.out.println(s);
+//    }
+//}
